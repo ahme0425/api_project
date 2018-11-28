@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+   <body>
+    <main>
+        <header >
+            <img id="back-button" alt="Back Button" title="Back"/>
+            <div class="searchButtonDiv">
+                <img id="search-button" alt="Search" title="Search" data-src="img/magnifying-glass.svg" class="iconic iconic-md"  />
+            </div>
+            <input type="text" id="search-input" placeholder="search" />
+        </header>
+        
+        <div class="page" id="search-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+        
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+        
+        <button id="modalButton">Show Modal</button>
+    </main>
+ 
+    
+    <div class="attribution">
+       
+    </div>
+    
+<div class="modal off">
+  <div class="modal-header">
+    <h2>Choose your Cheese</h2>
+  </div>
+  <div class="modal-radio">
+    <input type="radio" name="cheese" value="blue" id="blue" checked>
+    <label for="blue">Blue</label>
+
+    <input type="radio" name="cheese" value="cheddar" id="cheddar" checked>
+    <label for="cheddar">Cheddar</label>
+
+    <input type="radio" name="cheese" value="swiss" id="swiss">
+    <label for="swiss">Swiss</label>
+  </div>
+  <button class="cancelButton">Cancel</button>
+  <button class="saveButton">Save</button>
+
+</div>
+     <script src="js/iconic.min.js"></script>
+    <script src="js/key.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
